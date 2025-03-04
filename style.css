@@ -1,0 +1,709 @@
+html,body{
+    background-color: #ffd700; /*#929292*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/*Homepage*/
+
+.top-header{
+  background-color: black;
+}
+
+.w {
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.main{
+  max-width: 700px;
+  margin: auto;
+}
+.box{
+  background-color: black;
+  padding: 20px;
+  margin: 30px;
+}
+
+.image-homepage{
+  width: 100%;
+}
+
+.text{
+  color: white;
+}
+
+.button-read{
+  color: black;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bottom-footer{
+  background-color: rgb(53, 51, 51);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  height: 48px;
+  width: 100%;
+  /*position: fixed;
+  top: 0;*/
+
+}
+
+.navbar .w {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px ;
+  padding-top: 14px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar .w:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(49, 49, 49);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .w {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content .w:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*login Form*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .sign{
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  span.password {
+    float: right;
+    padding-top: 16px;
+    color: #000;
+  }
+
+  
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    span.password {
+       /*display: block;*/
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+  /*Resiter Form*/
+  
+.textrigist-h2{
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+}
+  
+.box-regist {
+  padding: 16px;
+  background-color: white;
+}
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  
+  a {
+    color: dodgerblue;
+  }
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+
+.tx{
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    /*margin: 0px;*/
+}
+
+.text-head{
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 18;
+    margin: 0px;
+}
+.text2{
+    padding: 15px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.main-form{
+    max-width: 700px;
+    margin: auto;
+}
+
+.form{
+    background-color: #ffd700;
+    padding: 15px;
+    margin: 15px;
+    /*border-style: dotted;
+    border-width: 10px;
+    border-color: black;*/
+}
+
+.main1{
+    max-width: 700px;
+    margin: auto;
+    
+}
+
+.box1{
+    background-color:whitesmoke;
+    padding: 15px;
+    margin: 15px;
+}
+
+.text1{
+    color: black;
+    /*text-align: center;*/
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-text1{
+    color: black;
+    
+}
+
+/*txSelect*/
+  
+.botton2{   
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;     
+}
+
+.botton2:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+ 
+.column-selecttx {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row-selecttx {
+  margin: 0 -5px;
+}
+
+.row-selecttx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column-selecttx {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.selecttx {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+  /*Branch information*/
+  .text-branch{
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column-branch {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  .row-branch {
+    margin: 0 -5px;
+  }
+  
+  .row-branch:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column-branch {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .branch {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  /*Card Apply Form*/
+  .text-cardapply{
+    text-align: center;
+    margin: 15px;
+  }
+
+  .current_date{
+    display: inline-block;
+  }
+
+  .select_branch{
+    display: inline-block;
+  }
+
+  
+  /*Insurance Form*/
+  .text-insurance{
+    text-align: center;
+  }
+
+  .main-insurance{
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .box-insurance{
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .mark{
+    color: red;
+  }
+
+.insu-sex{
+    display: inline-block;
+}
+
+.date{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.space{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*Card__info*/
+.text-Card_info{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.leftcolumn-card {   
+  float: left;
+  width: 75%;
+}
+
+
+.rightcolumn-card {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card_info {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn-card, .rightcolumn-card {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/*insurance_info */
+
+.leftcolumn-insu {   
+  float: left;
+  width: 75%;
+}
+
+
+.rightcolumn-insu {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card_insu {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row-insurance:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn-insu, .rightcolumn-insu {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.button-apply{
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid #000;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-apply:hover{
+  opacity: 0.8;
+  background-color: #b7b3b3;
+}
+
+
+/*Reciept*/
+.text-reciept{
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table.tb-reciept {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+  background-color: whitesmoke;
+}
+
+.main-reciept{
+   max-width: 700px;
+  margin: auto;
+  
+}
+
+.box-reciept{
+  
+  padding-bottom: 60px;
+ 
+}
+
+/*Account apply*/
+.text-account{
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+.date-account{
+  float: right;
+}
+
+.input-group{
+  margin-top: 20px;
+
+}
+
+/*User info*/
+.userinfo-text{
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+.userinfo-text2{
+  text-align: center;
+}
+
+.um{
+  text-align: center;
+}
+
+.main-us{
+  width: 550px;
+  /*height: 1800px;*/
+  float: left;
+}
+
+
+.userimg{
+  width: 500px;
+  padding: 15px;
+  margin: 15px;
+  background-color: black;
+  float: left;
+}
+
+.user-box{
+  background-color: whitesmoke;
+  display: block;
+  padding: 15px;
+  margin: 15px;
+}
+
+.user-box2{
+  background-color: whitesmoke;
+  width: 700px;
+  padding: 15px;
+  margin: 15px;
+  float: left;
+}
+
+.f{
+  width: 700px;
+ display: inline-block;
+}
