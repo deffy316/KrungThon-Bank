@@ -6,18 +6,18 @@
     $errors = array();
     include('server.php');
     // $errors = array();
-        $firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
-        $lastname = mysqli_real_escape_string($conn,$_POST['lastname']);
-        $date_of_birth = mysqli_real_escape_string($conn,$_POST['date_of_birth']);
-        $address = mysqli_real_escape_string($conn,$_POST['address']);
-        $career = mysqli_real_escape_string($conn,$_POST['career']);
-        $work_address = mysqli_real_escape_string($conn,$_POST['work_address']);
-        $salary = mysqli_real_escape_string($conn,$_POST['salary']);
-        $phone_number = mysqli_real_escape_string($conn,$_POST['phone_number']);
-        $sex = mysqli_real_escape_string($conn,$_POST['sex']);
-        $ID_card_Number = mysqli_real_escape_string($conn,$_POST['ID_card_Number']);
-        $password_1 = mysqli_real_escape_string($conn,$_POST['password_1']);
-        $password_2 = mysqli_real_escape_string($conn,$_POST['password_2']);
+        $firstname = mysqli_real_escape_string($con,$_POST['firstname']);
+        $lastname = mysqli_real_escape_string($con,$_POST['lastname']);
+        $date_of_birth = mysqli_real_escape_string($con,$_POST['date_of_birth']);
+        $address = mysqli_real_escape_string($con,$_POST['address']);
+        $career = mysqli_real_escape_string($con,$_POST['career']);
+        $work_address = mysqli_real_escape_string($con,$_POST['work_address']);
+        $salary = mysqli_real_escape_string($con,$_POST['salary']);
+        $phone_number = mysqli_real_escape_string($con,$_POST['phone_number']);
+        $sex = mysqli_real_escape_string($con,$_POST['sex']);
+        $ID_card_Number = mysqli_real_escape_string($con,$_POST['ID_card_Number']);
+        $password_1 = mysqli_real_escape_string($con,$_POST['password_1']);
+        $password_2 = mysqli_real_escape_string($con,$_POST['password_2']);
 
         if(empty($firstname)){
             array_push($errors, "Firstname is required");
@@ -67,7 +67,7 @@
         }
 
         $user_check_query = "SELECT * FROM user_info WHERE name = '$phone_number'OR ID_card_number = '$ID_card_Number'";
-        $query = mysqli_query($conn, $user_check_query);
+        $query = mysqli_query($con, $user_check_query);
         $result = mysqli_fetch_assoc($query);
 
         if($result){
@@ -84,10 +84,10 @@
         }
 
         $sql = "INSERT INTO user_info(name, lastname, date_of_birth, address, career, work_address, salary, phone_number, sex, ID_card_Number, password) VALUES('$firstname','$lastname','$date_of_birth','$address', '$career', '$work_address', '$salary', '$phone_number', '$sex', '$ID_card_Number', '$password_2')";
-        if (!mysqli_query($conn,$sql)) {
-        die('Error: ' . mysqli_error($conn));
+        if (!mysqli_query($con,$sql)) {
+        die('Error: ' . mysqli_error($con));
         }
-        header('location: homepage.php');
+        header('location: home.php');
         
     
 

@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 echo 'Logout la';
-header('location: homepage.php');
+header('location: home.php');
 ?>

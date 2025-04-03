@@ -6,9 +6,9 @@
     include('server.php');
     $errors = array();
     if(isset($_POST['login_user'])) {
-        $ID_card_Number = mysqli_real_escape_string($conn,$_POST['ID_card_Number']);
+        $ID_card_Number = mysqli_real_escape_string($con,$_POST['ID_card_Number']);
         
-        $password = mysqli_real_escape_string($conn,$_POST['password']);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
         
 
         if(empty($ID_card_Number)){
@@ -35,16 +35,16 @@
 
         if(count($errors)==0){
            $query="SELECT password FROM user_info WHERE ID_card_Number = '$ID_card_Number'";
-           $result = $conn->query($query);
+           $result = $con->query($query);
            $row = $result->fetch_assoc();
            $sql = "select user_id from user_info where id_card_number = '$ID_card_Number'";
-            $ruserid = $conn->query($sql);
+            $ruserid = $con->query($sql);
             $userid = $ruserid->fetch_assoc();
            if ($row['password'] == $password){
             $_SESSION['ID_card_Number'] = $ID_card_Number;
             $_SESSION['user_ID'] = $userid['user_id'];
             $_SESSION['success'] = "You are now logged in";
-            header("location: homepage.php");
+            header("location: home.php");
            }else{
             //echo '<script>alert("Wrong username or password try again"); window.location.href="login.php";</script>';
             echo $row['password'],'<br>';

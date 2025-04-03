@@ -1,9 +1,6 @@
 <?php
 session_start();
-$con=mysqli_connect("35.240.246.187","root","25452545","bankdb");
-if (mysqli_connect_errno()) {
-	echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+include ('server.php');
 
 $user = 'select * from user_info where user_ID ='.$_SESSION['user_ID'];
 

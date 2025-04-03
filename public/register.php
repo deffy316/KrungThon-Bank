@@ -161,7 +161,7 @@
   </div>
   
   <div class="box-regist signin">
-    <p>Already a member? <a href="homepage.php">log in</a></p>
+    <p>Already a member? <a href="home.php">log in</a></p>
   </div>
 </form>
 

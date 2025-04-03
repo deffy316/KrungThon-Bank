@@ -1,10 +1,6 @@
 <?php
 session_start();
-$con=mysqli_connect("35.240.246.187","root","25452545","bankdb");
-// Check connaection
-if (mysqli_connect_errno()) {
-	echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+include ('server.php');
 
 ?>
 <html>

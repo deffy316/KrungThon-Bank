@@ -5,11 +5,7 @@
             ini_set('display_startup_errors', 1);
             ini_set('display_errors', 1);
             error_reporting(-1);
-            $con=mysqli_connect("35.240.246.187","root","25452545","bankdb");
-            // Check connaection
-            if (mysqli_connect_errno()) {
-                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-            }
+            include ('server.php');
             $a = mysqli_real_escape_string($con,$_GET["acctNumTf"]);
             $b = mysqli_real_escape_string($con,$_GET["cardNum"]);
             $_SESSION['temp'] = $b;
