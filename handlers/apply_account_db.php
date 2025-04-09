@@ -14,17 +14,17 @@
         if(empty($account_name)){
             array_push($errors, "Account name is required");
             $_SESSION['error'] = "Account name is required";
-            header("location: apply_account.php");
+            header("location: ../public/apply_account.php");
         }
         if(empty($account_type)){
             array_push($errors, "Account Type is required");
             $_SESSION['error'] = "Account Type is required";
-            header("location: apply_account.php");
+            header("location: ../public/apply_account.php");
         }
         if(empty($branch_name)){
             array_push($errors, "Branch is required");
             $_SESSION['error'] = "Branch is required";
-            header("location: apply_account.php");
+            header("location: ../public/apply_account.php");
         }
         
         // $user_check_query = "SELECT * FROM bank_account WHERE account_name = '$account_name'OR account_type = '$account_type'";
@@ -47,7 +47,7 @@
                      
                     header("location: login.php");*/
                 
-                header("location: successfully_open_account.php");
+                header("location: ../public/successfully_open_account.php");
 
          
                    

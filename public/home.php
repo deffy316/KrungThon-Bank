@@ -31,7 +31,7 @@
             </div>
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="closeLoginModal()" class="cancelbtn">Cancel</button>
-                <span class="password">Not yet a member? <a href="register.php">Sign up</a></span>
+                <span class="password">Not yet a member? <a href="../public/register.php">Sign up</a></span>
             </div>
         </form>
     </div>
@@ -40,14 +40,14 @@
         <div class="box">
             <img class="image-homepage" src="../picture/card.jpg">
             <h2 class="text">Card information</h2>
-            <a class="button-read" href="Card_info.php">Read more</a>
+            <a class="button-read" href="../public/Card_info.php">Read more</a>
         </div>
     </div>
     <div class="main">
         <div class="box">
             <img class="image-homepage" src="../picture/insurance.jpg">
             <h2 class="text">Insurance information</h2>
-            <a class="button-read" href="Insurance_info.php">Read more</a>
+            <a class="button-read" href="../public/Insurance_info.php">Read more</a>
         </div>
     </div>
     <footer class="bottom-footer">

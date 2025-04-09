@@ -19,7 +19,7 @@
 
     </div>
     <form action="login_db.php" method="post">-->
-        <?php include('errors.php'); ?>
+        <?php include('../includes/errors.php'); ?>
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >
                 <h3>
@@ -55,7 +55,7 @@
 
     <div id="id01" class="modal">
     <form class="modal-content animate" action="../handlers/login_db.php" method="post">
-        <?php include('errors.php'); ?>
+        <?php include('../includes/errors.php'); ?>
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >
                 <h3>
@@ -89,7 +89,7 @@
 
         <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="password"> Not yet a member? <a href="register.php">Sign up</a></span>
+        <span class="password"> Not yet a member? <a href="../public/register.php">Sign up</a></span>
         </div>
   </form>
 </div>

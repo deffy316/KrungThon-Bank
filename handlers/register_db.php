@@ -22,48 +22,48 @@
         if(empty($firstname)){
             array_push($errors, "Firstname is required");
             $_SESSION['error'] = "Firstname is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($lastname)){
             array_push($errors, "Lastname is required");
             $_SESSION['error'] = "Lastname is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($date_of_birth)){
             array_push($errors, "Birthday is required");
             $_SESSION['error'] = "Birthday is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($address)){
             array_push($errors, "Address is required");
             $_SESSION['error'] = "Address is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($phone_number)){
             array_push($errors, "Phone number is required");
             $_SESSION['error'] = "Phone number is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($sex)){
             array_push($errors, "Sex is required");
             $_SESSION['error'] = "Sex is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($ID_card_Number)){
             array_push($errors, "ID Card Number is required");
             $_SESSION['error'] = "ID Card Number is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         if(empty($password_1)){
             array_push($errors, "Password is required");
             $_SESSION['error'] = "Password is required";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
         
         if($password_1 != $password_2){
             array_push($errors, "The two password do not match");
             $_SESSION['error'] = "The two password do not matchd";
-            header("location: register.php");
+            header("location: ../public/register.php");
         }
 
         $user_check_query = "SELECT * FROM user_info WHERE name = '$phone_number'OR ID_card_number = '$ID_card_Number'";
@@ -74,12 +74,12 @@
             if($result['ID_card_Number']=== $ID_card_Number){
                 array_push($errors, "ID Card Number already exists");
                 $_SESSION['error'] = "ID Card Number already exists";
-                header("location: register.php");  
+                header("location: ../public/register.php");  
             }
             if($result['phone_number']=== $phone_number){
                 array_push($errors, "Phone number already exists"); 
                 $_SESSION['error'] = "Phone number already exists";
-                header("location: register.php");  
+                header("location: ../public/register.php");  
             }
         }
 
@@ -87,7 +87,7 @@
         if (!mysqli_query($con,$sql)) {
         die('Error: ' . mysqli_error($con));
         }
-        header('location: home.php');
+        header('location: ../public/home.php');
         
     
 

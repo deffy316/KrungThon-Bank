@@ -23,28 +23,28 @@
         <div class="row-selecttx">
           <div class="column-selecttx">
             <div class="selecttx">
-              <a class="botton2" href="form.php">Transfer</a>
+              <a class="botton2" href="../public/form.php">Transfer</a>
               <img src="../picture/transfer.jpg" style="display: block; width: 100%;">          
             </div>
           </div>
 
           <div class="column-selecttx">
             <div class="selecttx">
-              <a class="botton2" href="billing.php">Billing</a>
+              <a class="botton2" href="../public/billing.php">Billing</a>
               <img src="../picture/billing.jpg" style="display: block; width: 100%;">               
             </div>
           </div>
 
           <div class="column-selecttx">
             <div class="selecttx">
-              <a class="botton2" href="card.php">Card</a>
+              <a class="botton2" href="../public/card.php">Card</a>
               <img src="../picture/pay_card.jpg" style="display: block; width: 100%;">    
             </div>
           </div>
 
           <div class="column-selecttx">
             <div class="selecttx">
-              <a class="botton2" href="phone.php">Top up</a>
+              <a class="botton2" href="../public/phone.php">Top up</a>
               <img src="../picture/top-up.jpg" style="display: block; width: 100%;">
             </div>
           </div>

@@ -19,7 +19,7 @@
             $row = $result->fetch_assoc();
             if ($sum > $row['account_balance']){
                 echo 'Not enough money in the bank account <br>';
-                echo '<input type="button" value="BACK" onclick="window.location.href=\'billing.php\'">';
+                echo '<input type="button" value="BACK" onclick="window.location.href=\'../public/billing.php\'">';
                 exit();
             }
             $insert = "INSERT INTO transaction(account_number_transferor,amount,transaction_memo,transaction_category_code,fee)
@@ -31,7 +31,7 @@
             if (!mysqli_query($con,$update1)) {
                 die('Error: ' . mysqli_error($con));
                 }
-            header('Location:reciept.php');
+            header('Location:../public/reciept.php');
         ?>
         </form>
     </body>

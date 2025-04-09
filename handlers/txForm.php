@@ -17,7 +17,7 @@
             $row = $result->fetch_assoc();
             if ($c > $row['account_balance']){
                 echo 'Not enough money in the bank account <br>';
-                echo '<input type="button" value="BACK" onclick="window.location.href=\'home.php\'">';
+                echo '<input type="button" value="BACK" onclick="window.location.href=\'../public/home.php\'">';
                 exit();
             }
             $sql = "select * from bank_account where account_number=".$b;
@@ -25,7 +25,7 @@
             $row = $result->fetch_assoc();
             if($result->num_rows<=0){
                 echo 'receipient number not exits <br>';
-                echo '<input type="button" value="BACK" onclick="window.location.href=\'form.php\'">';
+                echo '<input type="button" value="BACK" onclick="window.location.href=\'../public/form.php\'">';
                 exit();
             }
             if ($_GET["txType"] != "04"){
@@ -65,7 +65,7 @@
                 die('Error: ' . mysqli_error($con));
                 }
 
-            header('Location:reciept.php');
+            header('Location:../public/reciept.php');
         ?>
         <br><br>
         </form>

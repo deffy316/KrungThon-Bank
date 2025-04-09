@@ -30,7 +30,7 @@
 		<p>Payment card that can be used in place of cash to make purchases, the money for the purchase must be in the cardholder's bank account at the time of 
 			a purchase and is immediately transferred directly from that account to the merchant's account to pay 
 			for the purchase.</p>
-      <a class="button-apply" href="Card_apply_form_final.php" >Apply</a>
+      <a class="button-apply" href="../public/Card_apply_form_final.php" >Apply</a>
 	  </div>
 
 	  <div class="card_info">
@@ -39,7 +39,7 @@
 		<p>Prepaid travel card that you can load with a foreign currency of your choice. 
 			You can use a forex card just like a credit or debit card to pay for your expenses in a local currency abroad.
 			You can withdraw local cash from an ATM.</p>
-      <a class="button-apply" href="Card_apply_form_final.php" >Apply</a>
+      <a class="button-apply" href="../public/Card_apply_form_final.php" >Apply</a>
 	  </div>
 	</div>
 
@@ -52,7 +52,7 @@
 			(usually a bank or credit union) creates a revolving account and grants a line of credit to 
 			the cardholder, from which the cardholder can borrow money for payment to a merchant or as a 
 			cash advance.</p>
-      <a class="button-apply" href="Card_apply_form_final.php" >Apply</a>
+      <a class="button-apply" href="../public/Card_apply_form_final.php" >Apply</a>
 	  </div>
 
 	  <div class="card_info">
@@ -61,7 +61,7 @@
 		<p>A card you can use to pay for things. You buy a card with money loaded on it. 
 			Then you can use the card to spend up to that amount. A prepaid card is also called a prepaid debit card, 
 			or a stored-value card.</p>
-      <a class="button-apply" href="Card_apply_form_final.php" >Apply</a>
+      <a class="button-apply" href="../public/Card_apply_form_final.php" >Apply</a>
 	  </div>
 
 	  <div class="card_info">
@@ -71,7 +71,7 @@
 			the workers can buy supplies on their employer's behalf.
 			The cards are often co-branded with specific retailers or fuel stations,
 			limiting the ability of workers to make purchases at those stores only.</p>
-      <a class="button-apply" href="Card_apply_form_final.php" >Apply</a>
+      <a class="button-apply" href="../public/Card_apply_form_final.php" >Apply</a>
 	  </div>
 	</div>
   </div>

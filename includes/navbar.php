@@ -11,22 +11,22 @@
         echo '<button onclick="openLoginModal()" style="width:auto; float:right;">Login</button>';
     }
     ?>
-    <a class="w brand" href="home.php">KrungThon</a>
+    <a class="w brand" href="../public/home.php">KrungThon</a>
     <?php if(isset($_SESSION['ID_card_Number'])): ?>
         <div class="dropdown">
             <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content">
-                <a class="w" href="txSelect.php">Transaction</a>
-                <a class="w" href="apply_account.php">Open Account</a>
-                <a class="w" href="Card_apply_form_final.php">Card Apply</a>
-                <a class="w" href="Insurance_apply_form_final.php">Insurance Apply</a>
+                <a class="w" href="../public/txSelect.php">Transaction</a>
+                <a class="w" href="../public/apply_account.php">Open Account</a>
+                <a class="w" href="../public/Card_apply_form_final.php">Card Apply</a>
+                <a class="w" href="../public/Insurance_apply_form_final.php">Insurance Apply</a>
             </div>
         </div>
     <?php endif; ?>
     <div class="dropdown">
         <button class="dropbtn">About <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
-            <a class="w" href="Branch_info.php">Branch</a>
+            <a class="w" href="../public/Branch_info.php">Branch</a>
         </div>
     </div>
 </div>

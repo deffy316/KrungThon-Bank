@@ -22,7 +22,7 @@ include('../includes/navbar.php');
 				<p>A life insurance policy guarantees the insurer pays a sum of money to one 
 					or more named beneficiaries when the insured person dies in exchange for premiums paid by the policyholder during their lifetime.</p>
 				<p><b>Maximum coverage : </b> 500,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  <div class="card_insu">
@@ -31,7 +31,7 @@ include('../includes/navbar.php');
 				<p>Health insurance is a type of coverage that helps individuals and families pay 
 					for medical expenses. It is designed to provide financial protection in the event of unexpected illnesses, injuries, or medical conditions.</p>
 				<p><b>Maximum coverage :</b> 200,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  <div class="card_insu">
@@ -40,7 +40,7 @@ include('../includes/navbar.php');
 				<p>A long-term care insurance policy helps cover the costs of that care when you have a chronic medical condition, disability or disorder such as Alzheimer's disease. 
 					Most policies will reimburse you for care given in a variety of places</p>
 				<p><b>Maximum coverage : </b> 250,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  
@@ -55,7 +55,7 @@ include('../includes/navbar.php');
 					protects you against financial loss in the event of an accident or theft. In exchange for your paying a premium, 
 					the insurance company agrees to pay your losses as outlined in your policy.</p>
 				<p><b>Maximum coverage : </b> 150,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  <div class="card_insu">
@@ -64,7 +64,7 @@ include('../includes/navbar.php');
 				<p>Homeowners insurance is a form of property insurance that covers losses and damages to an individual's residence, along with furnishings and other assets in the home. 
 					Homeowners insurance also provides liability coverage against accidents in the home or on the property.</p>
 				<p><b>Maximum coverage : </b> 600,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  <div class="card_insu">
@@ -73,7 +73,7 @@ include('../includes/navbar.php');
 				<p>A renters insurance policy is a group of coverages designed to help protect renters living in a house or apartment. A typical renters insurance policy includes three 
 					types of coverage that help protect you, your belongings and your living arrangements after a covered loss.</p>
 				<p><b>Maximum coverage : </b> 400,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 
 			  <div class="card_insu">
@@ -82,7 +82,7 @@ include('../includes/navbar.php');
 				<p>Umbrella insurance is a type of personal liability insurance that can be indispensable when you find yourself liable for a claim larger than your homeowner's insurance 
 					or auto insurance will cover. If you own a boat, umbrella insurance will also pick up where your watercraft's liability insurance leaves off.</p>
 				<p><b>Maximum coverage : </b> 200,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php" >Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php" >Apply</a>
 			  </div>
 			  
 			  <div class="card_insu">
@@ -90,7 +90,7 @@ include('../includes/navbar.php');
 				<img src="../picture/disability.png" style="width: 100%;">
 				<p>Disability insurance is a type of insurance product that provides income in the event that a policyholder is prevented from working and earning an income due to a disability.</p>
 				<p><b>Maximum coverage : </b> 120,000 baths</p>
-				<a class="button-apply" href="Insurance_apply_form_final.php">Apply</a>
+				<a class="button-apply" href="../public/Insurance_apply_form_final.php">Apply</a>
 			  </div>
 			</div>
 		  </div>
