@@ -1,7 +1,8 @@
 <?php
-session_start();
-include ('server.php');
-include('navbar.php');
+include('../includes/config.php');
+include('../includes/navbar.php');
+include('../includes/server.php');
+
 ?>
 
 <html>
@@ -11,7 +12,7 @@ include('navbar.php');
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
-		<link rel= "stylesheet" href="style.css">
+		<link rel= "stylesheet" href="../assets/style.css">
 		<script>
             function gen(){
             return Math.floor(100000 + Math.random() * 900000000);
@@ -35,7 +36,7 @@ include('navbar.php');
 
 	<p class="tx">Card apply Form </p>
 	
-  	<form method="post" action="Card_apply.php">
+  	<form method="post" action="../handlers/Card_apply.php">
 	<input type="hidden" id="gen" name = "gen" value="">
 	<input type="hidden" id="gen2" name = "gen2" value="">
 	<div class="main-form">

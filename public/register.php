@@ -1,6 +1,9 @@
 <?php 
-    session_start();
-    include('server.php'); 
+    
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    include('../includes/server.php');
+    include('../includes/errors.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
     <!--<div class="header">
@@ -19,7 +22,7 @@
 
     </div>
     <form action="register_db.php" method="post">-->
-        <?php include('errors.php'); ?>
+        
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >
                 <h3>
@@ -94,8 +97,7 @@
     </form>-->
     
 
-    <form action="register_db.php" method='post'>
-    <?php include('errors.php'); ?>
+    <form action="../handlers/register_db.php" method='post'>
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >
                 <h3>

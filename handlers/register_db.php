@@ -4,7 +4,7 @@
     error_reporting(-1);
     session_start();
     $errors = array();
-    include('server.php');
+    include('../includes/server.php');
     // $errors = array();
         $firstname = mysqli_real_escape_string($con,$_POST['firstname']);
         $lastname = mysqli_real_escape_string($con,$_POST['lastname']);

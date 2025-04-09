@@ -1,3 +1,8 @@
+<?php 
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    include('../includes/server.php');
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -5,19 +10,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../assets/style.css">
         
     </head>
     <body>
     <h1 class="text-reciept">Transaction success</h1>
     <br>
     <?php 
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-    session_start();
-    include ('server.php');
-   
     $sql = 'select * from transaction order by date_and_time_of_transaction desc limit 1';
     
     $result = $con->query($sql);
@@ -79,7 +78,7 @@
     </tr> 
 
     <tr>
-    <form action="txSelect.php">
+    <form action="../handlers/txSelect.php">
        <td colspan= "2"><input type="submit" value="DONE" style="align: right;"></td>
     </form>
     </div>

@@ -1,6 +1,6 @@
 <?php
-session_start();
-include ('server.php');
+include('../includes/config.php');
+include('../includes/server.php');
 
 $user = 'select * from user_info where user_ID ='.$_SESSION['user_ID'];
 
@@ -109,7 +109,7 @@ if(empty($_POST['name_of_beneficiary3'])){
 	<head>
 		<meta charset="utf-8">
 		<meta charset="TIS-620">
-		<link rel= "stylesheet" href="style.css">
+		<link rel= "stylesheet" href="../assets/style.css">
 	</head>
 	<h1 class="text-insurance">Successfully apply insurance</h1>
 	<div class="main-insurance">
@@ -176,7 +176,7 @@ if(empty($_POST['name_of_beneficiary3'])){
 			}
 
 	?>
-	<form action="user_info.php">
+	<form action="../public/user_info.php">
 	<div class="botton" align="right"><input name="INSERT" type="submit" id="INSERT" value="Go to user info" ></div>
 	</form>
 	</div>

@@ -1,49 +1,19 @@
 <?php 
-    include(__DIR__.'/../includes/config.php');
-    include(ROOT_PATH.'/includes/navbar.php');
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    
 ?>
 <!DOCTYPE html>
 <html>
     
 <head>
     <title>Web Banking</title>
-    <link rel= "stylesheet" href="style.css">
+    <link rel= "stylesheet" href="../assets/style.css">
 </head>
 <body>
-    
-    <!-- <div class="navbar">
-        <?php
-        if(isset($_SESSION['ID_card_Number'])){
-            // Logged in
-            echo '<a class="w" style="float:right; color:white; weight:15px;" href="user_info.php">Welcome ' . $_SESSION['ID_card_Number'] . '</a>';
-            echo '<a class="w" style="float:right; color:red;" href="logout.php">LOGOUT</a>';
-            echo $_SESSION['user_ID'];
-        } else {
-            // Not logged in
-            echo '<button onclick="openLoginModal()" style="width:auto; float:right;">Login</button>';
-        }
-        ?>
-        <a class="w brand" href="homepage.php">KrungThon</a>
-        <div class="dropdown">
-            <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a class="w" href="txSelect.php">Transaction</a>
-                <a class="w" href="apply_account.php">Open Account</a>
-                <a class="w" href="Card_apply_form_final.php">Card Apply</a>
-                <a class="w" href="Insurance_apply_form_final.php">Insurance Apply</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">About <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a class="w" href="Branch_info.php">Branch</a>
-            </div>
-        </div>
-    </div> -->
-
     <!-- Login Modal -->
     <div id="id01" class="modal">
-        <form class="modal-content animate" action="login_db.php" method="post">
+        <form class="modal-content animate" action="../handlers/login_db.php" method="post">
             <div class="imgcontainer">
                 <span onclick="closeLoginModal()" class="close" title="Close Modal">&times;</span>
             </div>
@@ -68,14 +38,14 @@
 
     <div class="main">
         <div class="box">
-            <img class="image-homepage" src="picture/card.jpg">
+            <img class="image-homepage" src="../picture/card.jpg">
             <h2 class="text">Card information</h2>
             <a class="button-read" href="Card_info.php">Read more</a>
         </div>
     </div>
     <div class="main">
         <div class="box">
-            <img class="image-homepage" src="picture/insurance.jpg">
+            <img class="image-homepage" src="../picture/insurance.jpg">
             <h2 class="text">Insurance information</h2>
             <a class="button-read" href="Insurance_info.php">Read more</a>
         </div>

@@ -1,10 +1,7 @@
 <?php
-            ini_set('display_startup_errors', 1);
-            ini_set('display_errors', 1);
-            error_reporting(-1);
-            session_start();
-            include ('server.php');
-            include('navbar.php');
+include('../includes/config.php');
+include('../includes/navbar.php');
+include('../includes/server.php');
 ?>
 <html>
     <head>
@@ -14,13 +11,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
-        <link rel= "stylesheet" href="style.css">
+        <link rel= "stylesheet" href="../assets/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     </head>
     <body>
         <p class="tx">Phone charge</p>
         
-        <form action="phone_handle.php" method="get">
+        <form action="../handlers/phone_handle.php" method="get">
         <div class="main-form"> 
         <div class="form">   
         <p class="text1">Transferor information</p>

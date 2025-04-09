@@ -1,13 +1,13 @@
 <?php
-session_start();
-include ('server.php');
+include('../includes/config.php');
+include('../includes/server.php');
 
 ?>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta charset="TIS-620">
-		<link rel= "stylesheet" href="style.css">
+		<link rel= "stylesheet" href="../assets/style.css">
 	</head>
 	<?php 
 	$user = 'select * from user_info where user_ID ='.$_SESSION['user_ID'];
@@ -34,7 +34,7 @@ include ('server.php');
 		}else{
 			echo '<h1 class="text-insurance">You are not eligible to apply cards</h1>';
 			echo '<div class="box1">Your salary must be 15,000 or over to be able to apply cards.';
-			echo '<form action="user_info.php">
+			echo '<form action="../public/user_info.php">
 			<div class="botton" align="right"><input name="INSERT" type="submit" id="INSERT" value="Go to user info" ></div></div>
 			</form>';
 			exit();
@@ -101,7 +101,7 @@ include ('server.php');
 						echo "<p class=\"form-text1 space\">Card expires : ".$card_expires."</p>";
 						echo "<p class=\"form-text1 space\">Card limit : ".$card_limit."</p>";
 	?>
-	<form action="user_info.php">
+	<form action="../public/user_info.php">
 	<div class="botton" align="right"><input name="INSERT" type="submit" id="INSERT" value="Go to user info" ></div>
 	</form>
 	

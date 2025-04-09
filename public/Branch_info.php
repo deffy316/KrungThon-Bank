@@ -1,8 +1,8 @@
 <?php
-session_start();
-include('server.php');
+include('../includes/config.php');
+include('../includes/navbar.php');
+include('../includes/server.php');
 $sql = 'select * from branch';
-include('navbar.php');
 ?>
 
 <html>
@@ -12,7 +12,7 @@ include('navbar.php');
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
-		<link rel= "stylesheet" href="style.css">	
+		<link rel= "stylesheet" href="../assets/style.css">	
 	</head>
 
 	<body>

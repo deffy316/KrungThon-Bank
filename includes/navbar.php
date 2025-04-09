@@ -1,9 +1,10 @@
+
 <div class="navbar">
     <?php
     if(isset($_SESSION['ID_card_Number'])){
         // Logged in
-        echo '<a class="w" style="float:right; color:white; weight:15px;" href="user_info.php">Welcome ' .$_SESSION['ID_card_Number'].'</a>';
-        echo '<a class="w" style="float:right; color:red;" href="logout.php">LOGOUT</a>';
+        echo '<a class="w" style="float:right; color:white; weight:15px;" href="../public/user_info.php">Welcome ' .$_SESSION['ID_card_Number'].'</a>';
+        echo '<a class="w" style="float:right; color:red;" href="../handlers/logout.php">LOGOUT</a>';
         echo ''.$_SESSION['user_ID'];
     }else{
         // Not logged in
@@ -11,15 +12,17 @@
     }
     ?>
     <a class="w brand" href="home.php">KrungThon</a>
-    <div class="dropdown">
-        <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a class="w" href="txSelect.php">Transaction</a>
-            <a class="w" href="apply_account.php">Open Account</a>
-            <a class="w" href="Card_apply_form_final.php">Card Apply</a>
-            <a class="w" href="Insurance_apply_form_final.php">Insurance Apply</a>
+    <?php if(isset($_SESSION['ID_card_Number'])): ?>
+        <div class="dropdown">
+            <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a class="w" href="txSelect.php">Transaction</a>
+                <a class="w" href="apply_account.php">Open Account</a>
+                <a class="w" href="Card_apply_form_final.php">Card Apply</a>
+                <a class="w" href="Insurance_apply_form_final.php">Insurance Apply</a>
+            </div>
         </div>
-    </div>
+    <?php endif; ?>
     <div class="dropdown">
         <button class="dropbtn">About <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">

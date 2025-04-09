@@ -1,9 +1,6 @@
 <?php 
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-    session_start();
-    include('server.php');
+    include('../includes/config.php');
+    include('../includes/server.php');
     $errors = array();
     if(isset($_POST['login_user'])) {
         $ID_card_Number = mysqli_real_escape_string($con,$_POST['ID_card_Number']);
@@ -44,7 +41,7 @@
             $_SESSION['ID_card_Number'] = $ID_card_Number;
             $_SESSION['user_ID'] = $userid['user_id'];
             $_SESSION['success'] = "You are now logged in";
-            header("location: home.php");
+            header("location: ../public/home.php");
            }else{
             //echo '<script>alert("Wrong username or password try again"); window.location.href="login.php";</script>';
             echo $row['password'],'<br>';

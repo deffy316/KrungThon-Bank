@@ -3,7 +3,7 @@
     ini_set('display_errors', 1);
     error_reporting(-1);
     session_start();
-    include('server.php');
+    include('../includes/server.php');
     $errors = array();
     if(isset($_POST['apply_user'])) {
         $account_name = mysqli_real_escape_string($con,$_POST['account_name']);

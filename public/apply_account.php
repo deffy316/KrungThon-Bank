@@ -1,6 +1,7 @@
 <?php 
-    session_start();
-    include('server.php'); 
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    include('../includes/server.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="../assets/style.css">
     <title>apply_account</title>
     <script>
             function gen(){
@@ -21,7 +23,7 @@
         let d = gen();
     </script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
@@ -40,9 +42,9 @@
 	</div>
 
         <div>
-        <form action="apply_account_db.php" method="post">
+        <form action="../handlers/apply_account_db.php" method="post">
         <input type="hidden" id="gen" name = "gen" value="">
-        <?php include('errors.php'); ?>
+        <?php include('../includes/errors.php'); ?>
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >
                 <h3>

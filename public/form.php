@@ -1,10 +1,7 @@
 <?php
-            ini_set('display_startup_errors', 1);
-            ini_set('display_errors', 1);
-            error_reporting(-1);
-            session_start();
-            include ('server.php');
-            include('navbar.php');
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    include('../includes/server.php');
 ?>
 <html>
     <head>
@@ -14,7 +11,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&display=swap" rel="stylesheet">
         <title>Transaction Form</title>
-        <link rel= "stylesheet" href="style.css">
+        <link rel= "stylesheet" href="../assets/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script type="text/javascript">
            $(document).ready(function (){
@@ -34,7 +31,7 @@
     </head>
     <body>        
         <p class="tx">Transaction Form</p>
-        <form action="txForm.php" method="get">
+        <form action="../handlers/txForm.php" method="get">
 
        <div class="main-form">
         <div class="form">     

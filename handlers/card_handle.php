@@ -5,7 +5,7 @@
             ini_set('display_startup_errors', 1);
             ini_set('display_errors', 1);
             error_reporting(-1);
-            include ('server.php');
+            include('../includes/server.php');
             $a = mysqli_real_escape_string($con,$_GET["acctNumTf"]);
             $b = mysqli_real_escape_string($con,$_GET["cardNum"]);
             $_SESSION['temp'] = $b;

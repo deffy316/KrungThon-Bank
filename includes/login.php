@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include('server.php'); 
+    include('../includes/server.php'); 
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     
 </head>
 <body>
@@ -54,7 +54,7 @@
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
     <div id="id01" class="modal">
-    <form class="modal-content animate" action="login_db.php" method="post">
+    <form class="modal-content animate" action="../handlers/login_db.php" method="post">
         <?php include('errors.php'); ?>
         <?php if(isset($_SESSION['error'])) : ?>
             <div class = "error" >

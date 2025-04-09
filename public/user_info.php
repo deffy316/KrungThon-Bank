@@ -1,10 +1,8 @@
 <?php 
-    session_start();
-    ini_set('display_startup_errors', 1);
-            ini_set('display_errors', 1);
-            error_reporting(-1);
-    include('server.php'); 
-    include('navbar.php');
+    
+    include('../includes/config.php');
+    include('../includes/navbar.php');
+    include('../includes/server.php');
     $sql = 'select * from user_info where user_ID = '.$_SESSION['user_ID'];
     $query = 'select * from bank_account where user_ID = '.$_SESSION['user_ID'];
     $show_beneficiary = 'select * from insurance_beneficiary_info ib, insurance i,type_of_insurance t where ib.insurance_number = i.insurance_number 
@@ -19,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User information</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
@@ -28,7 +26,7 @@
         <div class="main-us">
         <div class="userimg">
          <div class="um">   
-        <img src="picture/user.png" alt="Avatar" class="avatar" style="width:50%;">
+        <img src="../picture/user.png" alt="Avatar" class="avatar" style="width:50%;">
         </div>
         <div class="user-box">
     <?php 
