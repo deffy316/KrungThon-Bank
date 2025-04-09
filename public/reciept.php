@@ -78,7 +78,7 @@
     </tr> 
 
     <tr>
-    <form action="../handlers/txSelect.php">
+    <form action="../public/txSelect.php">
        <td colspan= "2"><input type="submit" value="DONE" style="align: right;"></td>
     </form>
     </div>

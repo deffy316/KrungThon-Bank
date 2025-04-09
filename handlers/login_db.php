@@ -12,20 +12,20 @@
             // echo '<script>alert("Username is required"); window.location.href="login.php";</script>';
             array_push($errors, "ID Card Number is required");
             $_SESSION['error'] = "ID Card Number is required";
-            header("location: login.php");
+            header("location: ../public/login.php");
         }
         
         if(empty($password)){
             array_push($errors, "Password is required");
             // echo '<script>alert("Password is required"); window.location.href="login.php";</script>';
             $_SESSION['error'] = "Password is required";
-            header("location: login.php");
+            header("location: ../public/login.php");
         }
         if(empty($password)&&empty($ID_card_Number)){
             array_push($errors, "ID Card Number and Password are required");
             // echo '<script>alert("Password is required"); window.location.href="login.php";</script>';
             $_SESSION['error'] = "ID Card Number and Password are required";
-            header("location: login.php");
+            header("location: ../public/login.php");
         }
         
 
@@ -49,7 +49,7 @@
             array_push($errors,"Wrong ID Card Number or password combination");
             $_SESSION['error'] = "Wrong ID Card Number or password try again";
             
-             header("location: login.php");
+             header("location: ../public/login.php");
            }
 
 
